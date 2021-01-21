@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lite.page</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="header__inner">
+          <a class="logo" href="#">lite.page</a>
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </button>
+
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">CRM</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Мои сайты</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Каталог</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Тарифы</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Блог</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Помощь</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  <img
+                    class="menu__list-img"
+                    src="images/avatar.jpg"
+                    srcset="images/avatar@2x.jpg 2x"
+                    alt="Avatar"
+                  />
+                </a>
+                <div class="menu__list-wrapper">
+                  <span class="menu__list-avatarName">Артем Городецкий</span>
+                  <a class="logout" href="#">Выйти</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="container">
+        <div class="content__wrapper">
+          <aside class="sidebar sidebar__margin">
+            <a class="sidebar__navBtn" href="#"> Назад </a>
+            <div class="sidebar__menu">
+              <ul class="sidebar__menu--list">
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+                <li class="sidebar__menu--list-item">
+                  <a class="sidebar__menu--list-link" href="#"
+                    >Доступ к сайту</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <section class="siteAccess">
+            <a class="sidebar__navBtn" href="#"> Назад </a>
+            <div class="breadcrumb">
+              <a class="breadcrumb__link" href="#">Главная</a>
+              <a class="breadcrumb__link" href="#">Настройки сайта</a>
+              <a class="breadcrumb__link" href="#">Доступ к сайту</a>
+            </div>
+
+            <h2 class="title siteAccess__title">Доступ к сайту</h2>
+
+            <div class="siteAccess__inner">
+              <h3 class="subtitle siteAccess__subtitle">
+                Настройка доступа к сайту
+              </h3>
+              <p class="siteAccess__descr">
+                Контролируйте, кому доступен ваш сайт
+              </p>
+              <div class="siteAccess__row">
+                <p class="siteAccess__text">Интернет сайт</p>
+                <form class="form-radio siteAccess__form" id="form-id">
+                  <label class="form-radio--label siteAccess__form-label">
+                    <input
+                      class="form-radio--box siteAccess__form-radioBox"
+                      type="radio"
+                      name="site"
+                    />
+                    <span
+                      class="form-radio--boxStyle siteAccess__form-radioStyle"
+                    ></span>
+                    <span class="form-radio--text">Опубликовать сайт</span>
+                    <p class="siteAccess__form-descr">
+                      Доступно при оплаченном тарифном плане и купленном домене
+                    </p>
+                  </label>
+                  <label class="form-radio--label siteAccess__form-label">
+                    <input
+                      class="form-radio--box siteAccess__form-radioBox check"
+                      type="radio"
+                      name="site"
+                      id="enterPsw"
+                    />
+                    <span
+                      class="form-radio--boxStyle siteAccess__form-radioStyle"
+                    ></span>
+                    <span class="form-radio--text">Сайт защищен паролем</span>
+                    <p class="siteAccess__form-descr">
+                      Сайт увидит только тот, у кого есть пароль
+                    </p>
+                    <div class="inputField">
+                      <span class="inputField__label">Введите пароль</span>
+                      <input class="inputField__box" type="password" />
+                    </div>
+                  </label>
+                  <label class="form-radio--label siteAccess__form-label">
+                    <input
+                      class="form-radio--box siteAccess__form-radioBox"
+                      type="radio"
+                      name="site"
+                      checked
+                    />
+                    <span
+                      class="form-radio--boxStyle siteAccess__form-radioStyle"
+                    ></span>
+                    <span class="form-radio--text">Приватный сайт</span>
+                    <p class="siteAccess__form-descr">
+                      Только авторы и владелец сайта смогут увидеть сайт
+                    </p>
+                  </label>
+                  <div class="siteAccess__form-buttons">
+                    <button class="btn btn__light btn__margin">Отменить</button>
+                    <button class="btn btn__purple">Сохранить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div class="popup" id="openToast">
+      <div class="popup__inner">
+        <p>Настройки доступа к сайту успешно изменены</p>
+        <a class="close exit--toast" href="javascript:void(0);"></a>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

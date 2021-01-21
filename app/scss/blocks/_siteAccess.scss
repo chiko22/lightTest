@@ -1,0 +1,128 @@
+.siteAccess {
+  flex: 0 0 70.833333%;
+  max-width: 70.833333%;
+  @media screen and (max-width: 991px) {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .sidebar__navBtn {
+    display: none;
+    margin-bottom: 32px;
+    margin-left: 8px;
+    @media screen and (max-width: 991px) {
+      display: block;
+      width: 50%;
+    }
+  }
+  &__title {
+    margin-top: 7px;
+    margin-bottom: 47px;
+    margin-left: 8px;
+  }
+  &__inner {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 24px;
+  }
+  &__subtitle {
+    margin-bottom: 12px;
+  }
+  &__descr {
+    @extend %raleway-medium;
+    line-height: 150%;
+    color: $grey;
+    margin-bottom: 40px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  &__text {
+    width: 41%;
+    text-transform: uppercase;
+    @extend %raleway-medium;
+    font-size: 11px;
+    line-height: 130%;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 16px;
+    }
+  }
+  &__form {
+    width: 59%;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  &__form-descr {
+    max-width: 420px;
+    margin-top: 7px;
+    margin-bottom: 24px;
+    padding-left: 30px;
+    @extend %raleway-medium;
+    line-height: 150%;
+    color: $grey;
+    @media screen and (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  &__form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 42px;
+  }
+}
+
+.popup {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  @media screen and (max-width: 615px) {
+    display: none;
+  }
+  &__inner {
+    background: #1c1e20;
+    border-radius: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 10px 18px;
+    @extend %raleway-bold;
+    position: relative;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.close:hover {
+  opacity: 0.5;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 15px;
+  width: 2.5px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}

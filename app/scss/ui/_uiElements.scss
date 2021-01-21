@@ -1,0 +1,131 @@
+.breadcrumb {
+  @media screen and(max-width: 991px) {
+    margin-left: 8px;
+  }
+  &__link {
+    @extend %raleway-regular;
+    font-size: 13px;
+    line-height: 130%;
+    transition: all 0.3s;
+    &:hover {
+      color: #000;
+    }
+  }
+  &__link + .breadcrumb__link::before {
+    content: '/';
+    padding-right: 3px;
+  }
+}
+
+.title {
+  @extend %raleway-bold;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.subtitle {
+  @extend %raleway-bold;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.form-radio {
+  &--label {
+    position: relative;
+    display: block;
+  }
+  &--box {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding-left: 20px;
+  }
+
+  &--boxStyle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $border-color;
+    border-radius: 50%;
+  }
+
+  &--box:checked + .form-radio--boxStyle::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: $purple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  &--text {
+    margin-left: 33px;
+    @extend %raleway-bold;
+  }
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 11px 16px;
+  @extend %raleway-bold;
+  font-size: 15px;
+  line-height: 120%;
+  cursor: pointer;
+  transition: all 0.3s;
+  &__light {
+    background-color: #fff;
+    border-color: $border-color;
+
+    &:hover {
+      background: $bg-color;
+    }
+  }
+  &__margin {
+    margin-right: 12px;
+  }
+  &__purple {
+    background-color: $purple;
+    color: #fff;
+    &:hover {
+      background-color: rgba($purple, 0.9);
+    }
+  }
+}
+
+.inputField {
+  padding-left: 30px;
+  margin-bottom: 38px;
+  width: 100%;
+  display: inline-block;
+  &__label {
+    @extend %raleway-regular;
+    font-size: 13px;
+    line-height: 130%;
+    display: block;
+  }
+  &__box {
+    border: none;
+    border-bottom: 1px solid $border-color;
+    padding: 5px;
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
+.inputField {
+  display: none;
+}
+
+.form-radio--box:checked ~ .inputField{
+  display: inline-block!important;
+}
+
+.active {
+  display: inline-block!important;
+}

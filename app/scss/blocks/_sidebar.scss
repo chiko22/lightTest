@@ -1,0 +1,76 @@
+.sidebar {
+  flex: 0 0 25%;
+  max-width: 25%;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+  &__margin {
+    margin-top: 34px;
+  }
+  &__navBtn {
+    @extend %raleway-bold;
+    position: relative;
+    padding-left: 52px;
+    margin-bottom: 51px;
+  }
+  &__navBtn::before {
+    content: '';
+    background-image: url('../images/chevronLeft.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: none;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(calc(-50% - 2px));
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  &__navBtn:hover {
+    color: $purple;
+  }
+  &__navBtn:hover:before {
+    background: $purple;
+    background-image: url('../images/chevronLeft-white.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+  }
+  &__menu {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 0;
+    
+    &--list-item {
+      padding-left: 20px;
+      transition: all 0.3s;
+      border-left: 2px solid #fff;
+    }
+    &--list-item:hover {
+      border-left: 2px solid $purple;
+    }
+    &--list-item + .sidebar__menu--list-item {
+      margin-top: 24px;
+    }
+    &--list-link {
+      @extend %raleway-bold;
+      transition: color 0.3s;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}
